@@ -12,6 +12,7 @@
 
 html {
   font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -33,10 +34,29 @@ nav {
   grid-column: 1 / 2;
   background-color: var(--nav-color-main);
   display: grid;
-  grid-template-rows: 100px 200px 100px;
+  grid-template-rows: 100px 300px 100px;
   row-gap: 10px;
 }
 
+.nav-row {
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+  gap: 2rem;
+  color: white;
+  font-weight: 600;
+}
+
+.nav-row.title{
+font-size: 2.5rem;
+margin-left: 1rem;
+}
+
+.nav-row-top, .nav-row-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
 
 main {
