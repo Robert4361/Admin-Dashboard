@@ -28,6 +28,7 @@ body {
 header {
   grid-row: 1 / 2;
   grid-column: 2 / 4;
+  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.2);
 }
 
 .header-top {
@@ -52,6 +53,47 @@ header {
   background-color: var(--search-bar-color);
   border-radius: 10px;
   margin-right: 10rem;
+}
+
+.header-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding-left: 4rem;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.header-bottom-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-hello-message p:first-child {
+  font-size: 1rem;
+}
+
+.header-hello-message p:last-child {
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.header-buttons{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-right: 6rem;
+}
+
+.header-buttons button {
+  background-color: var(--nav-color-main);
+  color: white;
+  width: 8rem;
+  height: 3.5rem;
+  border-radius: 15px;
 }
 
 nav {
