@@ -1,7 +1,8 @@
-:root{
+:root {
   --nav-color-main: #38bdf8;
   --search-bar-color: #ececec;
   --card-left-border: #facc15;
+  --font-light: #475569;
 }
 
 *,
@@ -14,7 +15,7 @@
 
 html {
   font-size: 62.5%;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -82,7 +83,7 @@ header {
   font-size: 2rem;
 }
 
-.header-buttons{
+.header-buttons {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -115,17 +116,17 @@ nav {
   font-weight: 600;
 }
 
-.nav-row.title{
-font-size: 2.5rem;
-margin-left: 1rem;
+.nav-row.title {
+  font-size: 2.5rem;
+  margin-left: 1rem;
 }
 
-.nav-row-top, .nav-row-bottom {
+.nav-row-top,
+.nav-row-bottom {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-
 
 main {
   grid-row: 2 / 3;
@@ -163,4 +164,30 @@ main {
 
 .card p {
   font-size: 1.5rem;
+  color: #475569;
+}
+
+.announcement-cards {
+  background-color: white;
+  padding: 2rem;
+  margin-right: 4rem;
+  margin-top: 1rem;
+  box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.sidebar-card-upper {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-width: 5px;
+  margin-left: 3rem;
+  border-bottom: 2px solid var(--search-bar-color);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.sidebar-card-upper p {
+  font-size: 1rem;
+  color: var(--font-light);
 }
