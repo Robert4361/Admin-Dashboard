@@ -167,13 +167,24 @@ main {
   color: #475569;
 }
 
-.announcement-cards {
+.announcement-cards, .trending-cards {
   background-color: white;
   padding: 2rem;
   margin-right: 4rem;
   margin-top: 1rem;
   box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
+}
+
+.trending-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.trending h3 {
+  margin-top: 3rem;
 }
 
 .sidebar-card-upper {
@@ -188,6 +199,16 @@ main {
 }
 
 .sidebar-card-upper p {
-  font-size: 1rem;
+  font-size: 1.3rem;
+  color: var(--font-light);
+}
+
+.sidebar-card-lower {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.sidebar-card-lower-text p:last-child{
   color: var(--font-light);
 }
